@@ -6,28 +6,28 @@ const projects = [
     title: "Photoscape Studio",
     type: "Web Application",
     year: "2026",
-    image: "/projects/photoscape.jpg",
+    image: "/Web_Portofolio/projects/photoscape.jpg",
   },
   {
     id: 2,
     title: "Manten",
     type: "Wedding Platform",
     year: "2026",
-    image: "/projects/manten.jpg",
+    image: "/Web_Portofolio/projects/manten.jpg",
   },
   {
     id: 3,
     title: "Kamar320",
     type: "Digital Studio",
     year: "2026",
-    image: "/projects/kamar320.jpg",
+    image: "/Web_Portofolio/projects/kamar320.jpg",
   },
   {
     id: 4,
     title: "BRDF Rendering",
     type: "Research Project",
     year: "2026",
-    image: "/projects/brdf.jpg",
+    image: "/Web_Portofolio/projects/brdf.jpg",
   },
 ];
 
