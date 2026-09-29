@@ -1,46 +1,42 @@
+import Image from "next/image";
+import portrait from "../../public/projects/foto-cutout.png";
+
 export default function Hero() {
   return (
-    <section className="px-6 pb-20 pt-16 md:px-12 md:pt-24 lg:px-20">
-      <div className="mx-auto max-w-[1400px]">
-        <div className="flex min-h-[75vh] flex-col justify-between">
-
-          {/* Top */}
-          <div>
-            <p className="mb-6 text-sm uppercase tracking-[0.2em] text-neutral-500">
-              Software Developer — Jakarta, Indonesia
-            </p>
-
-            <h1 className="max-w-[1200px] text-[15vw] font-medium leading-[0.82] tracking-[-0.06em] md:text-[11vw] lg:text-[135px]">
-              Building
-              <br />
-              meaningful
-              <br />
-              digital things.
-            </h1>
-          </div>
-
-          {/* Bottom */}
-          <div className="mt-16 flex flex-col justify-between gap-8 border-t border-neutral-300 pt-8 md:flex-row md:items-end">
-
-            <p className="max-w-md text-base leading-relaxed text-neutral-600 md:text-lg">
-              Informatics student focused on web development,
-              backend systems, and building digital products
-              that are simple, useful, and well-crafted.
-            </p>
-
-            <a
-              href="#projects"
-              className="group flex items-center gap-3 text-lg font-medium"
-            >
-              View selected work
-
-              <span className="transition-transform duration-300 group-hover:translate-x-2">
-                →
-              </span>
+    <section className="hero" id="home" aria-labelledby="hero-title">
+      <div className="hero__inner page-shell">
+        <div className="hero__topline mono-label">
+          <span>Contact sheet / 001</span>
+          <span>Informatics student</span>
+        </div>
+        <div className="hero__stage">
+          <span className="hero__outline" aria-hidden="true">PORTFOLIO</span>
+          <div className="hero__name-block">
+            <p className="hero__hello mono-label">Yes, that&apos;s me</p>
+            <h1 id="hero-title">Michael<br />Yulianto<br />Tamba<span className="hero__period">.</span></h1>
+            <a className="hero__about-link" href="mailto:tamba.yulianto1@gmail.com">
+              Send a note <span aria-hidden="true">↗</span>
             </a>
-
           </div>
-
+          <figure className="hero__portrait-frame">
+            <Image
+              className="hero__portrait"
+              src={portrait}
+              alt="Michael Yulianto Tamba wearing a dark jacket and glasses"
+              sizes="(max-width: 639px) 78vw, (max-width: 1023px) 370px, 34vw"
+              preload
+            />
+          </figure>
+          <div className="hero__bio-block">
+            <span className="hero__bio-rule" aria-hidden="true" />
+            <p className="hero__bio">I&apos;m an Informatics student. I like computers, and learning web development is what I enjoy most. There&apos;s always something new I&apos;m trying.</p>
+            <p className="hero__focus mono-label">From frontend to database structure.</p>
+          </div>
+        </div>
+        <div className="hero__bottomline mono-label">
+          <span>01 / Portrait</span>
+          <span>Michael Yulianto Tamba</span>
+          <span>End of frame / 001</span>
         </div>
       </div>
     </section>
